@@ -7,35 +7,89 @@
     <title>Divantys</title>
     <link rel="icon" type="image/png" href="img/divantys.svg" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/design.css" />
 </head>
 
 <body>
     <div class="main">
-        <div class="container">
-            <div class="row justify-content-center align-items-center section pb-5" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-end h-100" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
                 <div class="col">
                     <div class="row justify-content-center p-1 ">
-                        <img src="img/divantys.svg " alt=" ">
+                        <img src="img/divantys.svg " alt=" " class="logo">
                     </div>
                     <div class="row justify-content-center p-2 ">
-                        <span>Mesa de postres<span class="dot"> • </span>Mesa de dulces<span class="dot"> • </span>Mesa enchilosa</span>
+                        <p class="main-p">Sevicio de mesa de postres, mesa de dulces y mesa enchilosa</p>
                     </div>
                     <div class="row justify-content-center dulces p-2 pb-3 ">
-                        <a href="index2.html#table-1 " class="hover "><img src="img/b-postres.svg " alt=" "></a>
-                        <a href="index2.html#table-2 " class="hover "><img src="img/b-dulces.svg " alt=" "></a>
-                        <a href="index2.html#table-3 " class="hover "><img src="img/b-enchiloso.svg " alt=" "></a>
-                        <a href="index2.html#table-4 " class="hover "><img src="img/b-combinado.svg " alt=" "></a>
+                        <button type="button" class="btn btn-mesa" data-toggle="modal" data-target="#exampleModal">
+                            <img src="img/ic-mesa.svg" alt="" class="img-mesa">
+                            <p class="p-mesa">¡Armar mesa!</p>
+                        </button>
+                    </div>
+                    <div class="row justify-content-center p-2">
+                        <p class="main-p2">Da click en el botón para armar tu mesa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal armar mesa -->
+    <div class="modal fade modal-color" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="p-modal-title">¿De cuántos postres será tu mesa?</p>
+                    <p class="p-modal-subtitle">Selecciona la cantidad de artículos de acuerdo a tu número de invitados.</p>
+
+                    <div class="cont-radio">
+                        <div class="d-flex">
+                            <input type="radio" name="mesa" id="mesa1" checked="checked" value="60" class="input-radio" />
+                            <label class="label" for="mesa1">60</label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="mesa" id="mesa2" value="120" class="input-radio" />
+                            <label class="label" for="mesa2">120</label>
+                        </div>
+                    </div>
+                    <div class="cont-radio">
+                        <div class="d-flex">
+                            <input type="radio" name="mesa" id="mesa3" value="180" class="input-radio" />
+                            <label class="label" for="mesa3">180</label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="mesa" id="mesa4" value="240" class="input-radio" />
+                            <label class="label" for="mesa4">240</label>
+                        </div>
+                    </div>
+                    <div class="cont-radio">
+                        <div class="d-flex">
+                            <input type="radio" name="mesa" id="mesa5" value="300" class="input-radio" />
+                            <label class="label" for="mesa5">300</label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="mesa" id="mesa6" value="360" class="input-radio" />
+                            <label class="label" for="mesa6">360</label>
+                        </div>
+                    </div>
+                    <div class="box-btn-armar my-4">
+                        <img src="img/ic-mesa.svg" alt="" class="img-modal">
+                        <button type="button" class="btn btn-modal-armar" id="btn_armar">armar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/aos.js"></script>
+<script src="js/app.js"></script>
 <script>
     AOS.init();
 </script>
