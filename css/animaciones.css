@@ -1,0 +1,50 @@
+/* animations */
+
+@keyframes slow-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.error {
+    color: #DD4B1A;
+}
+
+@keyframes shake_error {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgb(214, 53, 53);
+    }
+    50% {
+        transform: rotate(-3deg);
+        background-color: rgb(214, 53, 53);
+    }
+    100% {
+        transform: rotate(0deg);
+        background-color: rgb(214, 53, 53);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+        /* background-color: rgb(214, 53, 53); */
+    }
+    50% {
+        transform: rotate(-3deg);
+        /* background-color: rgb(214, 53, 53); */
+    }
+    100% {
+        transform: rotate(0deg);
+        /* background-color: rgb(214, 53, 53); */
+    }
+}
