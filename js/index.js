@@ -2,8 +2,10 @@
 const btn_redes = document.querySelectorAll('.btn_redes');
 const botones_mesa = document.querySelectorAll(".btn_card");
 // Listeners
+document.addEventListener('DOMContentLoaded', function(event) {
+    localStorage.clear();
+});
 btn_redes.forEach(element => {
-    console.log(element)
     element.addEventListener('click', function(event) {
         element.previousSibling.previousSibling.classList.toggle('d-none');
     });

@@ -2,13 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
     <title>Divantys</title>
     <link rel="icon" type="image/png" href="img/iconos/d.svg" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/armar_mesa.css" />
     <link rel="stylesheet" href="css/animaciones.css" />
 </head>
@@ -17,6 +17,7 @@
     <div class="mesa_suma">
         <img src="img/iconos/boton-mesa.svg" alt="" class="mesa_suma_img">
         <span class="mesa_suma_span">0</span>
+        <span class="mesa_aviso d-none">¡Tu mesa está lista!</span>
     </div>
     <div class="main sticky-top">
         <div class="bg">
@@ -50,112 +51,15 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="box_titulo_modal">
-                        <h1 class="titulo_modal">Mi mesa</h1>
+                        <h1 class="titulo_modal">Mi mesa </h1>
                     </div>
-                    <div class="opcion_modal color1">
-                        <div class="tipo_opcion">
-                            <img src="img/iconos/1-postres.svg" class="img_opcion" alt="">
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas1</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas2</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas3</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas4</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                    </div>
-                    <div class="opcion_modal color2">
-                        <div class="tipo_opcion">
-                            <img src="img/iconos/1-dulces.svg" class="img_opcion" alt="">
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                    </div>
-                    <div class="opcion_modal color3">
-                        <div class="tipo_opcion">
-                            <img src="img/iconos/1-enchilosos.svg" class="img_opcion" alt="">
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                        <div class="articulo_opcion">
-                            <div>
-                                <p class="p_articulo">bolsita de chocoretas</p>
-                                <!-- <p class="p_descripcion">bolsita de chocoretas</p> -->
-                            </div>
-                            <span class="span_articulo">12</span>
-                        </div>
-                    </div>
+                    <div class="opcion_modal d-none color1"></div>
+                    <div class="opcion_modal d-none color2"></div>
+                    <div class="opcion_modal d-none color3"></div>
                     <div class="footer_modal">
                         <div class="box_total">
                             <p class="p_total">Total de artículos</p>
-                            <span class="span_total">120<img src="img/iconos/ic-mesa.svg" class="total_img" alt=""></span>
-
+                            <span class="span_total">0<img src="img/iconos/ic-mesa.svg" class="total_img" alt=""></span>
                         </div>
                         <div class="box_buttons">
                             <button type="button" class="btn btn-outline-light" data-dismiss="modal">Volver</button>
