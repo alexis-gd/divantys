@@ -232,13 +232,13 @@ body {
 .mesa_aviso{
     position: absolute;
     right: calc(100% + .7rem);
-    top: 40%;
+    top: 15%;
     width: fit-content;
     border-radius: 5px 0 0 5px;
     background-color: var(--color-striped2) !important;
     font-size: .8rem;
     font-weight: 500;
-    padding: .4rem ;
+    padding: .3rem .6rem;
     color: #FFFFFF;
 }
 .mesa_aviso:before {
@@ -249,8 +249,8 @@ body {
     width: 0;
     height: 0;
     border-left: .8rem solid var(--color-striped2);
-    border-top: .98rem solid transparent;
-    border-bottom: .98rem solid transparent;
+    border-top: 1.485rem solid transparent;
+    border-bottom: 1.485rem solid transparent;
   }
 
 /* moda vista mesa */
