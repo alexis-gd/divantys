@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divantys</title>
+    <title>Eventos</title>
     <link rel="icon" type="image/png" href="img/iconos/d.svg" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" href="css/animaciones.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P40ETZ5MKF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P40ETZ5MKF');
+    </script>
 </head>
 
 <body>
@@ -34,7 +44,7 @@
             <div class="redes_contenido d-none flex-column">
                 <a href="#" class="btn btn_link link_color1">Decoraciones</a>
                 <a href="#" class="btn btn_link link_color2">Renta de bases</a>
-                <a href="#" class="btn btn_link link_color3">Galería Divantys</a>
+                <a href="#" class="btn btn_link link_color3">Galería Eventos</a>
             </div>
             <button class="btn btn_redes">¿Qué hay aquí?</button>
         </div>
@@ -93,17 +103,20 @@
     </div>
 
     <!-- Modal armar mesa -->
-    <div class="modal fade modal-color" id="mesaModal" tabindex="-1" aria-labelledby="mesaModalLabel" aria-hidden="true">
+    <div class="modal fade modal-color" id="mesaModal" tabindex="-1" aria-labelledby="mesaModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered justify-content-center">
             <div class="modal-content">
                 <div class="modal-body">
                     <p class="p-modal-title">¿De cuántos postres será tu mesa?</p>
-                    <p class="p-modal-subtitle">Selecciona la cantidad de artículos de acuerdo a tu número de invitados.</p>
+                    <p class="p-modal-subtitle">Selecciona la cantidad de artículos de acuerdo a tu número de invitados.
+                    </p>
 
                     <div class="cont-radio">
                         <input type="hidden" name="tipo">
                         <div class="d-flex">
-                            <input type="radio" name="mesa" id="mesa1" checked="checked" value="60" class="input-radio" />
+                            <input type="radio" name="mesa" id="mesa1" checked="checked" value="60"
+                                class="input-radio" />
                             <label class="label" for="mesa1">60</label>
                         </div>
                         <div class="d-flex">
