@@ -75,7 +75,6 @@ const titulos3 = [{
 const btn_tipo = document.querySelectorAll('.tipo_img');
 // crear mensaje al cotizar
 document.getElementById('cotizar').addEventListener('click', function(event) {
-    console.log("cotizar")
     var p_articulo = document.querySelectorAll(".p_articulo");
     var span_articulo = document.querySelectorAll(".span_articulo");
     const articulos = [];
@@ -113,7 +112,6 @@ btn_tipo.forEach(element => {
         const live_mesa = getParameterByName('live_mesa')
         this.classList.add('clicked');
         const tam_mesa = getParameterByName('tam_mesa');
-        console.log(live_mesa)
         location.href = `armar_mesa.html?tam_mesa=${tam_mesa}&tipo_mesa=${this.dataset.type}`;
     });
 });
@@ -152,17 +150,17 @@ function getLocalStorage(name) {
     return live_mesa_storage;
 }
 // actualizar el valor de un localStorage
-function setLocalStorage(name, valor) {
-    localStorage.setItem(name, valor);
-}
+// function setLocalStorage(name, valor) {
+//     localStorage.setItem(name, valor);
+// }
 // borrar un item localStorage
-function removeItemStorage(name) {
-    localStorage.removeItem(name);
-}
+// function removeItemStorage(name) {
+//     localStorage.removeItem(name);
+// }
 // borrar todo el local storage
-function clearLocalStorage() {
-    localStorage.clear();
-}
+// function clearLocalStorage() {
+//     localStorage.clear();
+// }
 // obtener variables de la url pasandole el nombre de la variable
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -181,7 +179,7 @@ function createOptions(array) {
         </div>
         <div class="opciones_col2">
             <button class="btn btn_opciones_menos"><img src="img/iconos/less.svg" class="img_less" alt=""></button>
-            <input type="text" class="btn opciones_btn" value="${element.valor}" data-tipo="${element.tipo}" data-opcion="${element.opcion}">
+            <input type="text" class="btn opciones_btn" value="${element.valor}" data-tipo="${element.tipo}" data-opcion="${element.opcion}" readonly="readonly">
             <button class="btn btn_opciones_mas"><img src="img/iconos/plus.svg" class="img_plus" alt=""></button>
         </div>
         </div>`;

@@ -1,5 +1,41 @@
 /* animations */
 
+@keyframes mesa_aviso {
+    0% {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+}
+@keyframes slow-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 @keyframes slow-down {
     0% {
         opacity: 0;
